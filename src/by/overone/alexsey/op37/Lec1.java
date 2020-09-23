@@ -60,7 +60,7 @@ public class Lec1 {
 
         //array = array[0] = 0, array[1]=0, array[2]=0, array[3]=0 ... array[9]=0
         //array2 = array2[0]=1, array2[1]=2, array2[2] = 3, array2[3] = 4 ... array2[9] = 10
-            //В квадратных скобках - индексы (начиная с нуля)
+            //git - индексы (начиная с нуля)
 
 
         }

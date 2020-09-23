@@ -4,15 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Person person = new Person();
-        person.name = "Artem";
-        person.age = 22;
-        Person person2 = new Person();
-        person2.name = "Alex";
-        person2.age = 30;
-        System.out.println(person.name);
-        System.out.println(person.age);
-        System.out.println(person);
+
 
 
 //        Car car = new Car(111,"KIA");
