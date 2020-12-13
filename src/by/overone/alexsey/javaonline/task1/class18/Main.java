@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+        WorkBD workBD = WorkBD.getInstance();
+        workBD.sqlMethod("Sasa");
         int[] array = {8, 0, 4, 7, 3, 7, 10, 12, -3};
         //-3 0 4 7 3 7 10 12 8
         //[-3,0,3] [4,7] [7,8] [10,12]
