@@ -1,86 +1,79 @@
 package by.overone.alexsey.lecture3;
 
+
 public class Main {
     public static void main(String[] args) {
-        int[] x = new int[100];
-        //x[9] =9
-        //x[8] =8
-        //x[7]=7
-        //x[6] =6
-        //x[5]=5
-        //x[4]=4
-        //x[3]=3
-        //x[2]= =2
-        //x[1]=1
-        //x[0]=0
-//        //10 elem - 0..9
-        for(int i=0;i<100;i++){
-            x[i]=i; //Заполняем от 0 до 100
-
-        }
-//        System.out.println("=====================");
-//        for (int i = 0; i < 100; i++) {
-//            System.out.println(x[i]);//Выводт от 0 до 100 в консоль
-//        }
-//        System.out.println("=======Заполнение массива от 99 до 0=======");
-//        int el =0;//В порядке убывания
-//        for(int i=99; i>=0;i--){
-//            x[i]=el; //el++(0..99) i--(99..0)
-//            el++;//Сначало мы заполняем последний эл-т x[99]=0,x[98]=1
-//            //x[99]=0 /  Так нужно
-//            //x[0]=99
-//        }
-//
-//        int el2=99;
-//        for(int i=0; i<100;i++){
-//            x[i]=el2;//i++(0..99) el--(99..0)
-//            //Сначало мы заполняем первый эл-т x[0]=99,x[1]=98
-//            el2--;//В порядке убывания
-//        }
-//        for (int i = 0; i < 100; i++) {//i=0 ...i=9//9<10 - true 10<10 -false
-//            System.out.println(x[i]);
-//        }
-        int[] y = new int[10]; //Дз второе Задание
-        int j = 0;
-        for (int i = 0; i < 10; i++) {
-            if (j == 2) j = 0;//j=0
-            y[i] = j;
-            j++;//j=2
-        }
-        for (int i = 0; i < 10; i++) { //Вывод в Консоль
-            System.out.println(y[i]);
-        }
-//        System.out.println("================");// Второй способ решения дз(второй задачи)
-//        for (int i = 0; i < 10; i++) {
-//            if (y[i] % 2 == 0) y[i] = 0;
-//            else {
-//                y[i] = 1;
-//            }
-//        }
-        //Массив Всегда начинается с нуля!  а Условие всегда до кол-ва ел-в
+        boolean t1 = true;
+        boolean t12 = false;
 
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println(y[i]);
-        }
-        boolean[] y1 = new boolean[10];
-        boolean test = false;
-        int k=0;
-        for(int i=0; i<10;i++) {
-            y1[i] = test;
-            test = !test;
+        //|| - или or
+        //&& - and - и
+
+        int i = 100_000;
+        while (i < 10) {
+            System.out.println(i);
+            i++;
+
         }
 
+        do {
+            System.out.println(i);
+            i++;
 
-        //Если было True, станет False и наоборот
-        System.out.println("=====================");
-        for (int i = 0; i < 10; i++) {
-            System.out.println(y1[i]);
+        } while (i < 10);
+        int[] array = new int[11];
+        System.out.println("====For====");
+
+        for (int element : array) {//Вывод
+            System.out.print(element + " ");
         }
+        System.out.println();
+        System.out.println("====For====");
+        // boolean test = (9 > 10) & (120 / 0 == 0);
+        System.out.println(128 | 32);
+        //1 0 0 0 0 0 0 0
+        //0 0 1 0 0 0 0 0
+        //----------------
+        //1 0 1 0 0 0 0 0
+
+        int x1 = 3;
+        int x2 = 4;
+        int x3 = x2;
+        x2 = x1;
+        x1 = x3;
+        System.out.println("x1 = " + x1);
+        System.out.println("x2 = " + x2);
+
+        System.out.println("====Break====");
+
+        for (int k = 1; k < 100; k++) {
+            System.out.println(k);
+            if (k % 2 == 0 && k > 10) {
+                break;
+            }
+
+        }
+        System.out.println("====Break====");
+
+        System.out.println("====Continue====");
+        for (int k = 1; k < 10; k++) {
+            if (k == 5) {
+                continue;
+            }
+            System.out.println(k);
+
+        }
+        System.out.println("====Continue====");
+        int[][] array2 = new int[3][3];//двумерный массив
     }
 
+//    Задание:
+//            1)Создать число int, inx x = например 12, и проверить, что данное число не делится на 2, и находиться в диапазоне от 10 до 25 включительно, проверять с помощью  if
+//            2)Создать число int, inx x = например -10, и проверить, что данное число делится на 2, и является положительным числом, проверять с помощью  if
+//            3)Создать массив заполнить его различными цифрами, затем в цикле найти корректное число, с помощью if, вывести в консоль индекс данного элемента и после этого остановить цикл,
+//            если данного числа в цикле нет, вывести в консоль «number not found»
 
+}
 
-
-    }
 
