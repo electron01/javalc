@@ -61,6 +61,8 @@ public class Lecture5 {
             array2d[i][column2] = tmp;
         }
 
+        int[][] array22 = {array1,array2,array3};
+
 
 
       /*  for (int j = 0; j < array2d[row1].length; j++) {
