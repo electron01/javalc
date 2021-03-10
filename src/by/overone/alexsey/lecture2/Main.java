@@ -16,6 +16,7 @@ public class Main {
         x /= 10;//x=x/10;
         System.out.println("x = " + x);
 
+
         int n1 = 10;
         int n2 = 10;
         char op = '+';

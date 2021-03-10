@@ -1,7 +1,6 @@
 package by.overone.alexsey.lecture5;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 
 public class Main {
@@ -10,6 +9,9 @@ public class Main {
 //    public static int i1 = 20;
     public static void main(String[] args) {
         Person p1 = new Person();
+        p1.age =21;
+
+
         int[] array = new int[5];
         p1.name.toLowerCase();
         //Class.object.method();
@@ -51,8 +53,8 @@ public class Main {
 
         Person.testStaticMethod();//static method
 
-        person1.testMethod();//method
-        person2.testMethod();
+        person1.testMethod("Hello World!","Hello");//method
+        person2.testMethod("Primer Text!","Bye");
 
 
         System.out.println("===========");
@@ -66,7 +68,9 @@ public class Main {
 
         System.out.println(person1.age);
         System.out.println(person2.age);
+
         Person.swap(person1,person2);
+
         System.out.println("after p1 = " + person1.age);
         System.out.println("after p2 = " +person2.age);
 

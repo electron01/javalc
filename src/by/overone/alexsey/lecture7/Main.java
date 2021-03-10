@@ -1,7 +1,5 @@
 package by.overone.alexsey.lecture7;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 public class Main {
     public static void main(String[] args) {
         //Примитивные типы данных
@@ -76,7 +74,7 @@ public class Main {
         while(j3<10);
         System.out.println("=====doWhile=====");
         //Отличе while от do while, одно - то что, do while 100% выполнит свой блок кода ХОТЯ БЫ ОДИН РАЗ, после чего проверит условие while, и если условие не выполняеться, то прекратит свою работу
-        System.out.println("=====Primer=====");
+        System.out.println("=====by.overone.alexsey.op37.Primer=====");
         int count = 100;
         do{
             System.out.println("do while = "+  count);//do while = 100  выведется в консоль
@@ -91,3 +89,5 @@ public class Main {
         System.out.println("Hello");
     }
 }
+
+
